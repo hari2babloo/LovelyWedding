@@ -6,24 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="com.hari.lovelywedding.lovelywedding.MainActivity">
+    tools:context="com.hari.lovelywedding.lovelywedding.MainActivity"
+    android:background="#B58B8B">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/splash"
-
-        android:id="@+id/imageView"
-        android:layout_alignParentTop="true" />
-
-    <TextView
-        android:text="Welcome.."
-        android:textSize="36dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="58dp"
-        android:id="@+id/textView2"
-        android:textColor="@android:color/background_light"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        app:srcCompat="@drawable/main"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView" />
 </RelativeLayout>

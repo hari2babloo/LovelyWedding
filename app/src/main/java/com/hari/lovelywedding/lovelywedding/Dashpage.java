@@ -14,7 +14,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Gallery;
+import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.synnapps.carouselview.CarouselView;
+import com.synnapps.carouselview.ImageListener;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -23,12 +27,17 @@ import java.util.TimeZone;
 
 public class Dashpage extends AppCompatActivity {
 
+    CarouselView carouselView;
+    int[] sampleImages = {R.drawable.image_1, R.drawable.a, R.drawable.b};
     Button id,fb,gallery,map,about,upload,setcal;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashpage);
         id= (Button) findViewById(R.id.live);
+        carouselView = (CarouselView) findViewById(R.id.carouselView);
+        carouselView.setPageCount(sampleImages.length);
+        carouselView.setImageListener(imageListener);
 
         gallery= (Button) findViewById(R.id.gallery);
         fb= (Button) findViewById(R.id.fb);
@@ -36,6 +45,8 @@ public class Dashpage extends AppCompatActivity {
         about =(Button)findViewById(R.id.about);
         upload =(Button)findViewById(R.id.upload);
         setcal = (Button)findViewById(R.id.setcal);
+
+
 
         setcal.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,6 +88,8 @@ public class Dashpage extends AppCompatActivity {
             }
         });
 
+
+
         id.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -111,7 +124,6 @@ public class Dashpage extends AppCompatActivity {
  //               startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://script.google.com/macros/s/AKfycbxPH0SzouJgg1tb9fb2S1K7Sw6kZTAcJ_p8hiqISlkySCccxHkG/exec")));
             }
         });
-
 
         gallery.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -155,5 +167,16 @@ public class Dashpage extends AppCompatActivity {
             }
         });
 
+
+
     }
+
+    ImageListener imageListener = new ImageListener() {
+        @Override
+        public void setImageForPosition(int position, ImageView imageView) {
+            imageView.setImageResource(sampleImages[position]);
+        }
+    };
+
+
 }

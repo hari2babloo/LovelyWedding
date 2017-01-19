@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/colorAccent"
+    android:background="#B58B8B"
     tools:context="com.hari.lovelywedding.lovelywedding.About"
     android:gravity="center">
 
@@ -35,10 +35,10 @@
         android:layout_below="@+id/imageView3"
         android:layout_centerHorizontal="true"
         android:id="@+id/jony"
-        android:textColor="#FFFF"
+        android:textColor="#B58B8B"
         android:textSize="25sp"
         android:gravity="center"
-        android:background="@android:color/holo_green_light"
+        android:background="#FFFF"
         android:layout_marginBottom="10dp" />
 
     <Button
@@ -46,13 +46,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/dany"
-        android:textColor="#FFFF"
+        android:textColor="#B58B8B"
         android:textSize="25sp"
         android:layout_below="@+id/jony"
         android:layout_alignLeft="@+id/jony"
         android:layout_alignStart="@+id/jony"
         android:gravity="center"
-        android:background="@android:color/holo_orange_dark"
+        android:background="#FFFF"
         android:layout_marginBottom="10dp" />
 
     <Button
@@ -60,13 +60,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/dass"
-        android:textColor="#FFFF"
+        android:textColor="#B58B8B"
         android:textSize="25sp"
         android:layout_below="@+id/dany"
         android:layout_alignLeft="@+id/dany"
         android:layout_alignStart="@+id/dany"
         android:gravity="center"
-        android:background="@android:color/holo_red_dark"
+        android:background="#FFFF"
         android:layout_marginBottom="10dp" />
 
     <Button
@@ -74,12 +74,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/rama"
-        android:textColor="#FFFF"
+        android:textColor="#B58B8B"
         android:textSize="25sp"
         android:gravity="center"
         android:layout_below="@+id/dass"
         android:layout_alignLeft="@+id/dass"
         android:layout_alignStart="@+id/dass"
-        android:background="@android:color/holo_purple" />
+        android:background="#FFFF" />
     </android.support.v7.widget.LinearLayoutCompat>
 </RelativeLayout>

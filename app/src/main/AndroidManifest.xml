@@ -32,8 +32,8 @@
         <activity android:name=".gallery" />
         <activity android:name=".About" />
         <activity android:name=".Webview" />
-        <activity android:name=".Dash2">
-
+        <activity android:name=".Dash2"></activity>
+        <activity android:name=".Countdown">
 
         </activity>
     </application>
